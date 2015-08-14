@@ -25,7 +25,7 @@ hr.light {
 }
 
 a {
-    color: #6ABBDB;
+    color: #049CFF;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -33,7 +33,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #6ABBDB;
+    color: #049CFF;
 }
 
 h1,
@@ -56,7 +56,7 @@ p {
 }
 
 .bg-secondary {
-    color: #6DBCDB;
+    color: #049CFF;
     background-color: #404040;
 }
 
@@ -89,7 +89,7 @@ section {
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: #fff;
+    background-color: #000;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -99,12 +99,12 @@ section {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #6ABBDB;
+    color: #049CFF;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #6ABBDB;
+    color: #049CFF;
 }
 
 .navbar-default .nav > li>a,
@@ -112,22 +112,34 @@ section {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #222;
+    color: #fff;
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #6ABBDB;
+    color: #049CFF;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #6ABBDB!important;
+    color: #049CFF!important;
     background-color: transparent;
 }
 
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
 }
 
@@ -163,12 +175,12 @@ section {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #6ABBDB;
+        color: #049CFF;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #6ABBDB;
+        color: #049CFF;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -178,7 +190,7 @@ section {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #6ABBDB;
+        color: #049CFF;
     }
 }
 
@@ -196,6 +208,7 @@ video#bgvid {
     height: auto; 
     z-index: -100;
     background: url(img/image01.jpg) no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
@@ -205,7 +218,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    /* background-image: url(../img/header.jpg); */
+    /* background-image: url(../img/image01.jpg); */
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -293,6 +306,12 @@ header .header-content .header-content-inner p {
     margin-bottom: 0;
 }
 
+.gallery {
+    background-image: url("https://d1qkyo3pi1c9bx.cloudfront.net/D7021408-671F-42FA-837E-DEB20A6B3D76/ae58568f-a266-46c7-85a0-0b544f438a28_h.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 .gallery-box {
     display: block;
     position: relative;
@@ -309,7 +328,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: #6ABBDB;
+    background: #049CFF;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -350,6 +369,26 @@ header .header-content .header-content-inner p {
 
     .gallery-box .gallery-box-caption .gallery-box-caption-content .project-name {
         font-size: 22px;
+    }
+}
+
+.menu {
+    background-image: url("http://chacuba.com/img/menu-repeat.jpg");
+}
+
+.food h3 {
+    font-size: 16px;
+}
+
+.food p {
+    font-size: 13px;
+    color: rgba(255,255,255,.7);
+}
+
+@media(min-width:768px) {
+    .menu {
+        background-image: url("http://chacuba.com/img/menu-repeat-big.jpg");
+        background-size: cover;
     }
 }
 
@@ -426,7 +465,7 @@ fieldset[disabled] .btn-default.active {
     position: relative;
     /* top: 600%;
     transform: translateY(600%); */
-    border-color: #6ABBDB;
+    border-color: #049CFF;
     color: #fff;
     background-color: transparent;
     -webkit-transition: all .35s;
@@ -442,7 +481,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
     border-color: #ed431f;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #000;
 }
 
 .btn-primary:active,
@@ -469,12 +508,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #6ABBDB;
-    background-color: #6ABBDB;
+    border-color: #049CFF;
+    background-color: #049CFF;
 }
 
 .btn-primary .badge {
-    color: #6ABBDB;
+    color: #049CFF;
     background-color: #fff;
 }
 
